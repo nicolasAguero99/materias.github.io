@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: wheat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#materias {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    text-align: center;
+    margin: auto auto;
+    margin-top: 100px;
+}
+
+#materias div {
+    cursor: pointer;
+    margin: auto auto;
+    width: 80%;
+    padding: 1.2em .5em;
+    background-color: aquamarine;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2), inset 0px 0px 30px 5px rgba(54, 54, 209, 0.433);
+}
+
+#materias div:hover {
+    background-color: blue;
+    color: white;
+}
+
+
+#demo {
+    text-align: center;
+    margin: 100px 0px;
+}
+
+
+
+@media only screen and (max-width: 822px) {
+    
+    #materias{
+        gap: 10px;
+    } 
+
+    #materias div {
+        width: 100%;
+        font-size: 1em;
+    }
+}
